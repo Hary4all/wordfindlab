@@ -2,15 +2,15 @@
   --family-bg: #f8fafc;
   --family-card: #ffffff;
   --family-card-soft: #f8fbff;
-  --family-border: rgba(148, 163, 184, 0.18);
+  --family-border: #f1f5f9;
   --family-text: #0f172a;
   --family-muted: #475569;
   --family-blue: #2563eb;
-  --family-green: #16a34a;
+  --family-green: #10b981;
   --family-yellow: #f59e0b;
   --family-pink: #ec4899;
   --family-purple: #7c3aed;
-  --family-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+  --family-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.03), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
 }
 
 body.family-page {

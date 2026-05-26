@@ -1,0 +1,6 @@
+# Temporary logs and dumps
+*.log
+*_log.json
+*.err
+*.err.txt
+*.out.txt
