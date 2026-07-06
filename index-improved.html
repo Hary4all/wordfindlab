@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== PERFORMANCE HINTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+  <link rel="dns-prefetch" href="https://faves.grow.me">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+  <!-- ===== THEME & PWA ===== -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="WordFindLab">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+
+  <!-- ===== CANONICAL & ROBOTS ===== -->
+  <link rel="canonical" href="https://wordfindlab.com/">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <meta name="bingbot" content="index,follow,max-snippet:-1,max-image-preview:large">
+
+  <!-- ===== LANGUAGE ===== -->
+  <link rel="alternate" hreflang="en" href="https://wordfindlab.com/">
+  <link rel="alternate" hreflang="x-default" href="https://wordfindlab.com/">
+
+  <!-- ===== PINTEREST VERIFICATION ===== -->
+  <meta name="p:domain_verify" content="ce85f169c38454cb352a510f074a7c62">
+
+  <!-- ===== TITLE & DESCRIPTION (SEO-OPTIMIZED) ===== -->
+  <title>WordFindLab — Free Word Finder &amp; Anagram Solver for Scrabble, Wordle &amp; Word Games</title>
+  <meta name="description" content="Free word finder and anagram solver. Enter scrambled letters to instantly find every valid English word. Works for Scrabble, Words With Friends, Wordle, crosswords and all word puzzles. No signup needed.">
+  <meta name="keywords" content="word finder, anagram solver, scrabble word finder, wordle solver, unscramble letters, jumble solver, words with friends cheat, free word search, letter unscrambler, crossword helper">
+
+  <!-- ===== OPEN GRAPH (Facebook, LinkedIn, WhatsApp, Discord) ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WordFindLab">
+  <meta property="og:title" content="WordFindLab — Free Word Finder &amp; Anagram Solver for Scrabble, Wordle &amp; Word Games">
+  <meta property="og:description" content="Enter your letters and instantly find every valid word. Scrabble scores, Wordle help, anagrams, and more. Completely free — no signup required.">
+  <meta property="og:url" content="https://wordfindlab.com/">
+  <meta property="og:image" content="https://wordfindlab.com/assets/og/wordfindlab-og-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="WordFindLab word finder tool showing scrambled letters being solved into real words">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ===== TWITTER CARDS ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@WordFindLab">
+  <meta name="twitter:title" content="WordFindLab — Free Word Finder &amp; Anagram Solver for Scrabble, Wordle &amp; Word Games">
+  <meta name="twitter:description" content="Enter your letters and instantly find every valid word. Scrabble scores, Wordle help, anagrams, and more. Completely free — no signup required.">
+  <meta name="twitter:image" content="https://wordfindlab.com/assets/og/wordfindlab-og-1200x630.png">
+  <meta name="twitter:image:alt" content="WordFindLab word finder tool showing scrambled letters being solved into real words">
+
+  <!-- ===== STYLES ===== -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="/assets/style.css?v=20260521">
+  <link rel="stylesheet" href="/assets/family-games.css?v=20260519">
+
+  <!-- ===== STRUCTURED DATA: WebApplication ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "WordFindLab",
+    "description": "Free word finder and anagram solver. Enter your letters and instantly find every valid word sorted by Scrabble and WWF score. Blank tile support included.",
+    "url": "https://wordfindlab.com/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Any",
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://wordfindlab.com/?letters={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "WordFindLab",
+      "url": "https://wordfindlab.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://wordfindlab.com/assets/og/wordfindlab-logo-512.png",
+        "width": 512,
+        "height": 512
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "1247"
+    }
+  }
+  </script>
+
+  <!-- ===== STRUCTURED DATA: FAQPage ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does WordFindLab work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter up to 15 letters — including up to 3 blank wildcards (?). WordFindLab generates every valid combination of those letters and matches them against a comprehensive English dictionary. Results are grouped by length, with Scrabble point values shown on each word so you can spot the highest-scoring plays instantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is WordFindLab free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, WordFindLab is 100% free forever. No signup, no subscription, no hidden fees. Just open the page in your browser and start solving word puzzles immediately."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What word games does WordFindLab support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WordFindLab works for Scrabble, Words With Friends, Wordle, Wordscapes, Boggle, crosswords, Jumble puzzles, anagrams, and any word game where you need to unscramble letters or find valid words."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I use blank tiles in the solver?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use a question mark (?) to represent a blank tile. The solver will try all 26 letter substitutions automatically. You can use up to 3 blank tiles per search."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can kids use WordFindLab safely?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, WordFindLab is family and kids safe. Our dictionary filter hides inappropriate words. It's perfect for classroom spelling assignments, homework help, and parent-child word play."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===== STRUCTURED DATA: BreadcrumbList ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wordfindlab.com/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===== STRUCTURED DATA: Organization ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "WordFindLab",
+    "url": "https://wordfindlab.com/",
+    "logo": "https://wordfindlab.com/assets/og/wordfindlab-logo-512.png",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61589971622325"
+    ]
+  }
+  </script>
+
+  <script src="/assets/noindex-query.js?v=20260518"></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T55GC2PM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<svg class="icon-sprite" aria-hidden="true" focusable="false">
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+    <path d="M5 12h14"/>
+    <path d="M13 5l7 7-7 7"/>
+  </symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24">
+    <path d="M20 6 9 17l-5-5"/>
+  </symbol>
+  <symbol id="icon-shuffle" viewBox="0 0 24 24">
+    <path d="M16 3h5v5"/>
+    <path d="M4 4h5c4 0 6 2 8 4l3 3"/>
+    <path d="M4 20l5-5"/>
+    <path d="M16 21h5v-5"/>
+    <path d="M20 4 4 20"/>
+  </symbol>
+  <symbol id="icon-target" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="8"/>
+    <circle cx="12" cy="12" r="3"/>
+    <path d="M12 3v4M21 12h-4M12 21v-4M3 12h4"/>
+  </symbol>
+  <symbol id="icon-grid" viewBox="0 0 24 24">
+    <rect x="4" y="4" width="6" height="6" rx="1.5"/>
+    <rect x="14" y="4" width="6" height="6" rx="1.5"/>
+    <rect x="4" y="14" width="6" height="6" rx="1.5"/>
+    <rect x="14" y="14" width="6" height="6" rx="1.5"/>
+  </symbol>
+  <symbol id="icon-wand" viewBox="0 0 24 24">
+    <path d="M14 4 4 14"/>
+    <path d="m13 5 6 6"/>
+    <path d="M19 3l2 2"/>
+    <path d="M3 19l2 2"/>
+    <path d="M10 20l1.5-3.5L15 15l-3.5-1.5L10 10l-1.5 3.5L5 15l3.5 1.5L10 20Z"/>
+  </symbol>
+  <symbol id="icon-message" viewBox="0 0 24 24">
+    <path d="M21 15a3 3 0 0 1-3 3H8l-5 4V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3z"/>
+    <path d="M8 8h8M8 12h5"/>
+  </symbol>
+  <symbol id="icon-puzzle" viewBox="0 0 24 24">
+    <path d="M9 3h6v3h2a2 2 0 0 1 2 2v2h3v6h-3v2a2 2 0 0 1-2 2h-2v3H9v-3H7a2 2 0 0 1-2-2v-2H2v-6h3V8a2 2 0 0 1 2-2h2z"/>
+  </symbol>
+  <symbol id="icon-book" viewBox="0 0 24 24">
+    <path d="M4 19a2 2 0 0 1 2-2h14"/>
+    <path d="M6 3h14v18H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+    <path d="M8 7h8M8 11h8"/>
+  </symbol>
+  <symbol id="icon-search" viewBox="0 0 24 24">
+    <circle cx="11" cy="11" r="8"/>
+    <path d="m21 21-4.35-4.35"/>
+  </symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24">
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+  </symbol>
+  <symbol id="icon-lightning" viewBox="0 0 24 24">
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+  </symbol>
+  <symbol id="icon-users" viewBox="0 0 24 24">
+    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+    <circle cx="9" cy="7" r="4"/>
+    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+  </symbol>
+</svg>
+
+<!-- ===== MINI RUNNING ANNOUNCEMENT BAR ===== -->
+<a href="/scrabble-word-finder/" class="mini-announce-bar" aria-label="Open Scrabble Word Finder" title="Find high-scoring Scrabble words instantly">
+  <div class="mini-announce-track">
+    <span>
+       Find high-scoring Scrabble words instantly | Unscramble letters fast | Free Word Solver | Boost your game now | Wordle helper available | Anagram solver online
+    </span>
+    <span aria-hidden="true">
+       Find high-scoring Scrabble words instantly | Unscramble letters fast | Free Word Solver | Boost your game now | Wordle helper available | Anagram solver online
+    </span>
+  </div>
+</a>
+
+<!-- Nav injected by WordFindLab shared script -->
+
+<section class="hero-shell" id="hero">
+  <div class="hero-shell__inner">
+    <div class="hero-copy">
+      <div class="hero-kicker">
+        <span class="hero-kicker-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></span>
+        <span>THE #1 WORD FINDER TOOL</span>
+      </div>
+      <h1 class="hero-title">
+        Find the Word.<br><span class="accent">Win the Board.</span>
+      </h1>
+      <p class="hero-subcopy">Unscramble letters, solve Wordle clues, and find high-scoring words for Scrabble, Words With Friends, crosswords, and anagrams — in seconds.</p>
+
+      <div class="hero-feature-row" aria-label="Core benefits">
+        <article class="hero-feature hero-feature--green">
+          <span class="hero-feature-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-check"></use></svg></span>
+          <div>
+            <h3>Solve Wordle Faster</h3>
+            <p>Find the hidden words in seconds.</p>
+          </div>
+        </article>
+        <article class="hero-feature hero-feature--gold">
+          <span class="hero-feature-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-target"></use></svg></span>
+          <div>
+            <h3>Find Scrabble Winners</h3>
+            <p>Discover score-heavy plays instantly.</p>
+          </div>
+        </article>
+        <article class="hero-feature hero-feature--violet">
+          <span class="hero-feature-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-shuffle"></use></svg></span>
+          <div>
+            <h3>Unscramble Any Letters</h3>
+            <p>Turn jumbles into real words.</p>
+          </div>
+        </article>
+        <article class="hero-feature hero-feature--blue">
+          <span class="hero-feature-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-puzzle"></use></svg></span>
+          <div>
+            <h3>Beat Jumbles Instantly</h3>
+            <p>Never get stuck on a puzzle.</p>
+          </div>
+        </article>
+      </div>
+
+      <section class="hero-search-card card" id="search">
+        <div class="hero-search-label">
+          Enter your letters
+          <span class="hsl-hint">(use ? for a blank tile)</span>
+        </div>
+        <div class="hero-search-row">
+          <input id="letters" class="input-letters" type="text" autocomplete="off"
+                 autocapitalize="characters" spellcheck="false"
+                 placeholder="Enter letters here..." maxlength="15"
+                 aria-label="Enter scrambled letters to find words"
+                 title="Type your scrambled letters here. Use ? for blank tiles.">
+          <button id="go" class="btn btn-cta" title="Click to find all matching words">Find Words</button>
+          <button id="clear" class="btn ghost" title="Clear the search field">Clear</button>
+        </div>
+        <div class="trust-badges trust-badges--compact" aria-label="Trust signals">
+          <span class="trust-badge"><span class="trust-check" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-check"></use></svg></span> Free Forever</span>
+          <span class="trust-badge"><span class="trust-check" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-check"></use></svg></span> No Signup Required</span>
+          <span class="trust-badge"><span class="trust-check" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-check"></use></svg></span> Instant Results</span>
+        </div>
+        <div class="hero-quick-links" aria-label="Quick site links">
+          <a class="hero-quick-link" href="/blog/" title="Read word game tips and strategy guides">Blog</a>
+          <a class="hero-quick-link" href="/guides/" title="Browse all word game guides and tutorials">Guides</a>
+          <a class="hero-quick-link" href="/browse/" title="Browse words alphabetically">Browse Words</a>
+          <a class="hero-quick-link" href="/pronunciation/" title="Learn word pronunciation">Pronunciation</a>
+          <a class="hero-quick-link" href="/trending-words/" title="See trending word searches">Trending Words</a>
+        </div>
+        <div class="hero-enter-hint">Press <b>Enter</b> to search</div>
+
+        <details class="advanced">
+          <summary>Advanced filters</summary>
+          <div class="row" style="margin-top:8px">
+            <div class="col">
+              <label for="starts">Starts with</label>
+              <input id="starts" type="text" autocomplete="off" placeholder="e.g. PR" maxlength="8" title="Filter words that start with these letters">
+            </div>
+            <div class="col">
+              <label for="ends">Ends with</label>
+              <input id="ends" type="text" autocomplete="off" placeholder="e.g. ING" maxlength="8" title="Filter words that end with these letters">
+            </div>
+            <div class="col">
+              <label for="contains">Contains</label>
+              <input id="contains" type="text" autocomplete="off" placeholder="e.g. AT" maxlength="8" title="Filter words containing these letters">
+            </div>
+            <div class="col">
+              <label for="length">Length</label>
+              <input id="length" type="number" min="2" max="15" placeholder="any" title="Filter by exact word length">
+            </div>
+            <div class="col">
+              <label for="dict">Dictionary</label>
+              <select id="dict" title="Choose between all words or common words only">
+                <option value="all">All words</option>
+                <option value="common">Common words</option>
+              </select>
+            </div>
+          </div>
+        </details>
+
+        <div id="status" class="status"></div>
+
+        <div class="meaningful-toggle" data-meaningful-toggle>
+          <input type="checkbox" id="meaningful-toggle" checked>
+          <div>
+            <strong>Meaningful words only</strong>
+            <span class="toggle-copy">Keep everyday words near the top and hide the ultra-obscure entries.</span>
+          </div>
+        </div>
+
+        <div class="demo-box" id="demoBox">
+          <div class="demo-box-title">Try an example</div>
+          <div class="demo-chips">
+            <span class="demo-chip" data-fill="STARING" title="Click to try this example">STARING</span>
+            <span class="demo-chip" data-fill="AELPPS" title="Click to try this example">AELPPS</span>
+            <span class="demo-chip" data-fill="TCA?ER" title="Click to try this example with a blank tile">TCA?ER</span>
+            <span class="demo-chip" data-fill="Q?IZ" title="Click to try this example with a blank tile">Q?IZ</span>
+            <span class="demo-chip" data-fill="AEINRST" title="Click to try this example">AEINRST</span>
+          </div>
+        </div>
+
+        <div id="resultsCard" hidden style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px">
+          <div class="results-head">
+            <h2 style="font-size:16px;margin:0 0 4px">Results</h2>
+            <span class="meta" id="resultsMeta"></span>
+          </div>
+          <div id="results"></div>
+        </div>
+
+        <section class="card definition-panel" id="definition-panel" hidden>
+          <div class="definition-panel-head">
+            <div>
+              <p class="definition-label">Dictionary definition</p>
+              <h2 class="definition-word" id="definition-word"></h2>
+              <p class="definition-phonetic" id="definition-phonetic"></p>
+            </div>
+            <div class="definition-actions">
+              <button class="btn ghost" type="button" id="definition-copy">Copy</button>
+              <button class="btn ghost" type="button" id="definition-close">Close</button>
+            </div>
+          </div>
+          <div class="definition-meta">
+            <span class="definition-pos" id="definition-pos"></span>
+            <span class="definition-source">Free Dictionary API</span>
+          </div>
+          <p class="definition-primary" id="definition-primary"></p>
+          <p class="definition-example" id="definition-example"></p>
+          <div class="definition-sections" id="definition-sections"></div>
+          <div class="definition-pills" id="definition-synonyms"></div>
+          <div class="definition-pills definition-antonyms" id="definition-antonyms"></div>
+          <p class="definition-note" id="definition-note"></p>
+        </section>
+      </section>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-orb hero-orb--one"></div>
+      <div class="hero-orb hero-orb--two"></div>
+      <div class="hero-orb hero-orb--three"></div>
+
+      <div class="hero-tile hero-tile--w">W<span>4</span></div>
+      <div class="hero-tile hero-tile--k">K<span>5</span></div>
+      <div class="hero-tile hero-tile--q">Q<span>10</span></div>
+      <div class="hero-tile hero-tile--z">Z<span>10</span></div>
+
+      <div class="hero-board">
+        <div class="hero-board-top">YOUR LETTERS</div>
+        <div class="hero-letter-row">
+          <span>S</span><span>T</span><span>A</span><span>R</span><span>I</span><span>N</span><span>G</span>
+        </div>
+        <div class="hero-board-subtop">TOP RESULTS</div>
+        <div class="hero-result hero-result--a"><span>RATING</span><strong>12</strong></div>
+        <div class="hero-result hero-result--b"><span>STARING</span><strong>11</strong></div>
+        <div class="hero-result hero-result--c"><span>RINGS</span><strong>10</strong></div>
+        <div class="hero-result hero-result--d"><span>STING</span><strong>9</strong></div>
+        <div class="hero-result hero-result--e"><span>TRAINS</span><strong>9</strong></div>
+        <a class="hero-board-link" href="/word-lists/highest-scoring-scrabble-words/" title="View all highest-scoring Scrabble words">View All Results <svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></a>
+      </div>
+
+      <div class="hero-sidecard">
+        <div class="hero-sidecard-title">WORDLE HELPER</div>
+        <div class="hero-wordle-grid" aria-hidden="true">
+          <span class="g-green"></span><span class="g-gray"></span><span class="g-gray"></span><span class="g-gray"></span><span class="g-gray"></span>
+          <span class="g-yellow"></span><span class="g-yellow"></span><span class="g-gray"></span><span class="g-green"></span><span class="g-gray"></span>
+          <span class="g-gray"></span><span class="g-green"></span><span class="g-green"></span><span class="g-gray"></span><span class="g-yellow"></span>
+        </div>
+        <div class="hero-sidecard-subtitle">Best Words to Try</div>
+        <div class="hero-sidecard-tags">
+          <span>STAIR</span>
+          <span>TRAIN</span>
+          <span>RATING</span>
+        </div>
+        <a class="hero-sidecard-link" href="/wordle-solver/" title="Open the Wordle solver tool">View More <svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></a>
+      </div>
+
+      <div class="hero-mini-elements" aria-hidden="true">
+        <span class="hero-mini-chip hero-mini-chip--quiz">QUIZ</span>
+        <span class="hero-mini-chip hero-mini-chip--jazz">JAZZ</span>
+        <span class="hero-mini-chip hero-mini-chip--train">TRAIN</span>
+        <span class="hero-mini-chip hero-mini-chip--rating">RATING</span>
+        <span class="hero-mini-chip hero-mini-chip--stair">STAIR</span>
+      </div>
+
+      <aside class="hero-trending-card" aria-label="Trending searches">
+        <div class="hero-trending-kicker">Popular searches</div>
+        <h3>Trending Searches</h3>
+        <div class="hero-trending-list">
+          <a href="/5-letter-words/" title="Browse all 5 letter words for Wordle">5 Letter Words</a>
+          <a href="/words-ending-with/ing/" title="Find words ending in ING">Words Ending in ING</a>
+          <a href="/wordle-solver/" title="Solve Wordle puzzles faster">Wordle Helper</a>
+          <a href="/scrabble-word-finder/" title="Find high-scoring Scrabble words">Scrabble Cheat</a>
+          <a href="/anagram-solver/" title="Unscramble any letters into words">Unscramble Letters</a>
+        </div>
+      </aside>
+
+      <div class="hero-trust-row" aria-label="Quick trust signals">
+        <span><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-check"></use></svg> Free Forever</span>
+        <span><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-check"></use></svg> Instant Results</span>
+        <span><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-check"></use></svg> No Login Required</span>
+        <span><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-check"></use></svg> Updated Daily</span>
+      </div>
+
+      <div class="hero-playbook">
+        <div class="hero-playbook-eyebrow">TODAY'S PLAYBOOK</div>
+        <div class="hero-playbook-title">Three steps to a better word</div>
+        <div class="hero-playbook-step">
+          <span>1</span>
+          <div>
+            <strong>Type your letters</strong>
+            <p>Use ? for a blank tile or missing letter.</p>
+          </div>
+        </div>
+        <div class="hero-playbook-step">
+          <span>2</span>
+          <div>
+            <strong>Add smart filters</strong>
+            <p>Set starts with, ends with, or length.</p>
+          </div>
+        </div>
+        <div class="hero-playbook-step">
+          <span>3</span>
+          <div>
+            <strong>Pick the highest score</strong>
+            <p>Sort by value and keep the best play.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stat-badge">2.3M+ Words Generated</div>
+      <div class="hero-lens"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAGE WRAP ===== -->
+<div class="page-wrap">
+
+  <!-- ===== MAIN COLUMN ===== -->
+  <main class="page-main">
+
+    <!-- Play & Learn Game Hub -->
+    <section class="game-cta-hub" aria-labelledby="game-hub-title">
+      <div class="game-hub-header">
+        <p class="game-hub-label">WordFindLab Play &amp; Learn Hub</p>
+        <h2 id="game-hub-title" class="game-hub-title">Interactive Word Games &amp; Puzzles</h2>
+      </div>
+      <div class="game-hub-grid">
+        <a class="game-cta-card game-cta-card--blue" href="/crossword-game/" title="Play the daily crossword puzzle">
+          <div class="game-cta-badge">DAILY PUZZLE</div>
+          <div class="game-cta-icon">🧩</div>
+          <h3>Daily Crossword</h3>
+          <p>Solve kids or adult challenge boards.</p>
+          <div class="game-cta-btn">Play Now →</div>
+        </a>
+        <a class="game-cta-card game-cta-card--pink" href="/spelling-games-for-kids/" title="Fun spelling games for children">
+          <div class="game-cta-badge">KIDS WORLD</div>
+          <div class="game-cta-icon">🦁</div>
+          <h3>Spelling Games</h3>
+          <p>Spelling Adventure with Miss Meaw!</p>
+          <div class="game-cta-btn">Start Game →</div>
+        </a>
+        <a class="game-cta-card game-cta-card--gold" href="/printable-word-search/" title="Generate printable word search worksheets">
+          <div class="game-cta-badge">CLASSROOM</div>
+          <div class="game-cta-icon">📄</div>
+          <h3>Printable Word Search</h3>
+          <p>Generate clean PDF worksheets instantly.</p>
+          <div class="game-cta-btn">Print Now →</div>
+        </a>
+        <a class="game-cta-card game-cta-card--purple" href="/family-word-games/" title="Explore family-friendly word games">
+          <div class="game-cta-badge">LEARNING</div>
+          <div class="game-cta-icon">🎓</div>
+          <h3>Kids Word Games</h3>
+          <p>Explore safe, family-friendly word play.</p>
+          <div class="game-cta-btn">Explore Hub →</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="card homepage-wotd homepage-wotd--featured" aria-labelledby="wotd-home-title" data-wotd-widget data-wotd-compact="true">
+      <div class="wotd-featured-layout">
+        <div class="wotd-featured-main">
+          <p class="wotd-label">Word of the Day</p>
+          <div class="wotd-date" data-wotd-date>Loading today's word...</div>
+          <h2 id="wotd-home-title" class="wotd-word" data-wotd-word>Loading...</h2>
+          <p class="wotd-phonetic" data-wotd-phonetic></p>
+          <div class="wotd-featured-meta">
+            <span class="wotd-pos" data-wotd-pos></span>
+            <span class="wotd-featured-chip">Daily vocabulary boost</span>
+          </div>
+          <p class="wotd-definition" data-wotd-definition></p>
+          <p class="wotd-example" data-wotd-example></p>
+          <div class="wotd-synonyms" data-wotd-synonyms></div>
+        </div>
+        <aside class="wotd-featured-aside" aria-label="Dictionary and popular tools">
+          <div class="wotd-featured-panel">
+            <div class="wotd-featured-panel-title">Dictionary</div>
+            <div class="wotd-featured-copy">Look up meanings, examples, pronunciation, and synonyms in one clean place.</div>
+            <div class="wotd-featured-links">
+              <a href="/dictionary/" title="Open the full dictionary">Open Dictionary</a>
+              <a href="/guides/" title="Browse word game guides">Browse Guides</a>
+            </div>
+          </div>
+          <div class="wotd-featured-panel">
+            <div class="wotd-featured-panel-title">Browse hubs</div>
+            <div class="wotd-featured-copy">Jump into alphabetical browsing, letter-length pages, pronunciation help, and trending words.</div>
+            <div class="wotd-featured-links">
+              <a href="/browse/" title="Browse words alphabetically">Browse Words</a>
+              <a href="/pronunciation/" title="Learn pronunciation">Pronunciation</a>
+              <a href="/trending-words/" title="See trending word searches">Trending Words</a>
+            </div>
+          </div>
+          <div class="wotd-featured-panel wotd-featured-panel--wide">
+            <div class="wotd-featured-panel-title">Quick picks</div>
+            <ul class="wotd-featured-list">
+              <li><a href="/scrabble-word-finder/" title="Find the best Scrabble words">Scrabble Finder</a></li>
+              <li><a href="/wordle-solver/" title="Solve Wordle puzzles">Wordle Solver</a></li>
+              <li><a href="/anagram-solver/" title="Unscramble any letters">Anagram Solver</a></li>
+              <li><a href="/jumble-solver/" title="Solve jumble word puzzles">Jumble Solver</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="card homepage-popular-tools" aria-labelledby="popular-tools-title">
+      <div class="wotd-featured-layout">
+        <div class="wotd-featured-main">
+          <p class="wotd-label">Popular Tools</p>
+          <div class="wotd-date">Fast shortcuts to the main solvers</div>
+          <h2 id="popular-tools-title" class="wotd-word">Start with the right tool</h2>
+          <p class="wotd-phonetic">Go straight to the page that matches your puzzle, rack, or clue.</p>
+          <div class="wotd-featured-meta">
+            <span class="wotd-pos">Best for quick play</span>
+            <span class="wotd-featured-chip">Clean, direct links</span>
+          </div>
+          <p class="wotd-definition">WordFindLab focuses on fast, practical helpers for Scrabble, Wordle, anagrams, Jumbles, and word lists.</p>
+          <p class="wotd-example">Pick the solver that matches your exact problem and get moving.</p>
+        </div>
+        <aside class="wotd-featured-aside" aria-label="Popular WordFindLab tools">
+          <div class="wotd-featured-panel wotd-featured-panel--wide">
+            <div class="wotd-featured-panel-title">Word Games</div>
+            <ul class="wotd-featured-list">
+              <li><a href="/crossword-game/" title="Play daily crossword puzzles">Daily Crossword</a></li>
+              <li><a href="/spelling-games-for-kids/" title="Fun spelling games for kids">Spelling Adventure</a></li>
+              <li><a href="/word-search-for-kids/" title="Word search puzzles for children">Word Search</a></li>
+              <li><a href="/printable-word-search/" title="Generate printable word searches">Printable Puzzles</a></li>
+            </ul>
+            <div class="wotd-featured-links">
+              <a href="/family-word-games/" title="Family word games hub">Family Hub</a>
+              <a href="/blog/" title="Word game blog">Learning Blog</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="feature-hub" id="more-tools">
+      <div class="feature-hub-title">Powerful Tools to Win Every Word Game</div>
+      <div class="feature-grid">
+        <a class="feature-card" href="/" title="Use the main word finder tool">
+          <span class="feature-icon feature-icon--blue" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-shuffle"></use></svg></span>
+          <div class="feature-card-title">Word Finder</div>
+          <div class="feature-card-copy">Find words from any letters instantly.</div>
+          <div class="feature-card-link">Try Now <svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></div>
+        </a>
+        <a class="feature-card" href="/anagram-solver/" title="Unscramble letters into all possible words">
+          <span class="feature-icon feature-icon--violet" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-wand"></use></svg></span>
+          <div class="feature-card-title">Anagram Solver</div>
+          <div class="feature-card-copy">Unscramble letters and reveal all words.</div>
+          <div class="feature-card-link">Try Now <svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></div>
+        </a>
+        <a class="feature-card" href="/5-letter-words/" title="Browse all 5-letter words for Wordle">
+          <span class="feature-icon feature-icon--green" aria-hidden="true">5</span>
+          <div class="feature-card-title">5 Letter Words</div>
+          <div class="feature-card-copy">Find all 5 letter words for any game.</div>
+          <div class="feature-card-link">Try Now <svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></div>
+        </a>
+        <a class="feature-card" href="/words-starting-with/" title="Browse words starting with any letter">
+          <span class="feature-icon feature-icon--gold" aria-hidden="true">A</span>
+          <div class="feature-card-title">Words Starting With</div>
+          <div class="feature-card-copy">Explore words that start with any letter.</div>
+          <div class="feature-card-link">Try Now <svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></div>
+        </a>
+        <a class="feature-card" href="/words-ending-with/" title="Browse words ending with any letter">
+          <span class="feature-icon feature-icon--red" aria-hidden="true">Z</span>
+          <div class="feature-card-title">Words Ending With</div>
+          <div class="feature-card-copy">Find words that end with any letter.</div>
+          <div class="feature-card-link">Try Now <svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></div>
+        </a>
+        <a class="feature-card feature-card--all" href="/guides/" title="Explore all word game tools and guides">
+          <span class="feature-icon feature-icon--all" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-grid"></use></svg></span>
+          <div class="feature-card-title">All Tools</div>
+          <div class="feature-card-copy">Explore every word game tool and guide.</div>
+          <div class="feature-card-link">View All <svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></div>
+        </a>
+        <a class="feature-card" href="/blog/" title="Read word game strategy blog posts">
+          <span class="feature-icon feature-icon--blue" aria-hidden="true">B</span>
+          <div class="feature-card-title">Word Game Blog</div>
+          <div class="feature-card-copy">Read helpful tips, puzzle strategies, and kid-friendly learning ideas.</div>
+          <div class="feature-card-link">Read Blog <svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></div>
+        </a>
+      </div>
+    </div>
+
+    <section class="family-section family-card" id="family-adventures">
+      <div class="family-section__title">
+        <div>
+          <p class="family-section-label">Fun Word Adventures for Kids &amp; Families</p>
+          <h2>Bright, friendly games for home, school, and playtime</h2>
+        </div>
+        <a
+          class="family-follow-link"
+          href="https://www.facebook.com/profile.php?id=61589971622325"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Follow WordFindLab on Facebook"
+          title="Follow WordFindLab on Facebook"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11" fill="currentColor"></circle>
+            <path
+              fill="#ffffff"
+              d="M13.4 19v-5.1h1.7l.3-2.2h-2V10c0-.6.2-.9.9-.9h1.2V7.2h-1.6c-1.8 0-3 1.1-3 3.2v1.3H9v2.2h2v5.1h2.4z"
+            ></path>
+          </svg>
+          <span class="visually-hidden">Follow WordFindLab on Facebook</span>
+        </a>
+      </div>
+      <div class="family-card-grid">
+        <a class="family-card" href="/word-search-for-kids/" title="Free word search puzzles for kids">
+          <div class="family-card__icon family-card__icon--green" aria-hidden="true">WS</div>
+          <h3>Free Word Search for Kids</h3>
+          <p>Enjoy bright letter hunts with playful categories and touch-friendly gameplay.</p>
+          <div class="family-card__cta">Try Now -></div>
+        </a>
+        <a class="family-card" href="/printable-word-search/" title="Generate printable word search worksheets">
+          <div class="family-card__icon family-card__icon--yellow" aria-hidden="true">PDF</div>
+          <h3>Printable Word Search</h3>
+          <p>Create classroom-friendly activities you can print or save as PDF.</p>
+          <div class="family-card__cta">Try Now -></div>
+        </a>
+        <a class="family-card" href="/crossword-game/" title="Play daily crossword puzzles">
+          <div class="family-card__icon family-card__icon--blue" aria-hidden="true">CW</div>
+          <h3>Daily Crossword</h3>
+          <p>Choose Kids Mode or Adults Mode for a polished crossword challenge.</p>
+          <div class="family-card__cta">Try Now -></div>
+        </a>
+        <a class="family-card" href="/spelling-games-for-kids/" title="Fun spelling games for children">
+          <div class="family-card__icon family-card__icon--pink" aria-hidden="true">ABC</div>
+          <h3>Spelling Games for Kids</h3>
+          <p>Type the word from the clue and build spelling confidence with rewards.</p>
+          <div class="family-card__cta">Try Now -></div>
+        </a>
+        <a class="family-card" href="/family-word-games/" title="Family word games hub">
+          <div class="family-card__icon family-card__icon--purple" aria-hidden="true">FAM</div>
+          <h3>Family Word Games</h3>
+          <p>Find a central hub for family-friendly puzzles, learning, and fun.</p>
+          <div class="family-card__cta">Try Now -></div>
+        </a>
+        <a class="family-card" href="/wordle-solver/" title="Wordle puzzle helper">
+          <div class="family-card__icon family-card__icon--blue" aria-hidden="true">W</div>
+          <h3>Wordle Helper</h3>
+          <p>Keep the puzzle momentum going with quick help and smart tips.</p>
+          <div class="family-card__cta">Try Now -></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section" aria-labelledby="trust-section-title">
+      <div class="trust-header">
+        <p class="trust-kicker">Family Safe &amp; 100% Free</p>
+        <h2 id="trust-section-title">Why WordFindLab is the Best Word Learning Site</h2>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-card-icon">🎁</div>
+          <h3>100% Free Forever</h3>
+          <p>Enjoy unlimited crosswords, spelling activities, and word searches without any hidden fees, subscriptions, or paywalls.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon">👨‍👩‍👧‍👦</div>
+          <h3>Family &amp; Kids Safe</h3>
+          <p>Our dictionary filters hide inappropriate words. Perfect for classroom spelling assignments, homework, and parent-child play.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon">⚡</div>
+          <h3>No Sign-Up Required</h3>
+          <p>No account creation, no email forms, and no login required. Just open the page in your browser and play instantly!</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon">📅</div>
+          <h3>Daily Fresh Puzzles</h3>
+          <p>Fresh daily crossword boards and spelling tasks to keep the brain engaged and building a vocabulary streak every day.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO Content with FAQ Schema markup -->
+    <div class="seo-section" itemscope itemtype="https://schema.org/FAQPage">
+      <h2>How WordFindLab works</h2>
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 itemprop="name">How does WordFindLab's word finder work?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Enter up to 15 letters — including up to 3 blank wildcards (<b>?</b>). The tool generates every valid combination of those letters and matches them against a dictionary of English words. Results are grouped by length, with Scrabble point values shown on each word so you can spot the highest-scoring plays instantly.</p>
+        </div>
+      </div>
+
+      <h2>Works for every word game</h2>
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 itemprop="name">What word games does WordFindLab support?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Whether you need a <b>word finder</b>, <b>letter matcher</b>, or <b>anagram solver</b>, the same engine handles them all — Scrabble, Words With Friends, Wordscapes, Boggle, crosswords, and daily word puzzles. Use the advanced filters to narrow results by starting letters, ending letters, or exact word length.</p>
+        </div>
+      </div>
+
+      <h2>Tips for best results</h2>
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 itemprop="name">How do I get the best results from the word solver?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <ul itemprop="text">
+            <li>Add <b>?</b> to represent a blank tile — the solver tries all 26 substitutions automatically.</li>
+            <li>Use <b>Starts with</b> + <b>Ends with</b> to find words that fit a crossword slot.</li>
+            <li>Switch to <b>Common words</b> for a faster, cleaner list during casual play.</li>
+            <li>Results within each length group are sorted by Scrabble score — highest value first.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="related-tools">
+        <div class="related-tools-label">Explore More Tools</div>
+        <div class="related-links">
+          <a class="related-link" href="/scrabble-word-finder/" title="Find the best Scrabble words"><span class="related-link-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></span>Scrabble Finder</a>
+          <a class="related-link" href="/wordle-solver/" title="Solve Wordle puzzles faster"><span class="related-link-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></span>Wordle Solver</a>
+          <a class="related-link" href="/anagram-solver/" title="Unscramble any letters into words"><span class="related-link-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></span>Anagram Solver</a>
+          <a class="related-link" href="/words-with-friends-cheat/" title="Find Words With Friends words"><span class="related-link-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></span>Words With Friends</a>
+          <a class="related-link" href="/jumble-solver/" title="Solve jumble word puzzles"><span class="related-link-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></span>Jumble Solver</a>
+          <a class="related-link" href="/2-letter-words/" title="Browse all 2-letter words for Scrabble">2-Letter Words</a>
+          <a class="related-link" href="/word-lists/q-words-without-u/" title="Q words without U for Scrabble">Q Words Without U</a>
+          <a class="related-link" href="/word-lists/best-wordle-starting-words/" title="Best starting words for Wordle">Best Wordle Starters</a>
+          <a class="related-link" href="/guides/" title="Browse all word game guides">Guides Hub</a>
+          <a class="related-link" href="/scrabble-vs-words-with-friends/" title="Compare Scrabble and Words With Friends">Scrabble vs WWF</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="card" style="margin-top:16px">
+      <h2>Word Game Learning Blog</h2>
+      <p>Long-form articles about how word games help kids learn, how scrambled words support vocabulary growth, and why regular play is good for your brain.</p>
+      <div class="related-links" style="margin-top:10px">
+        <a class="related-link" href="/blog/" title="Browse all blog posts">Blog Hub</a>
+        <a class="related-link" href="/blog/benefits-of-learning-through-scrambled-words/" title="How scrambled words help learning">Scrambled Words Benefits</a>
+        <a class="related-link" href="/blog/word-games-benefits-for-kids/" title="Word games benefits for children">Word Games for Kids</a>
+        <a class="related-link" href="/blog/word-games-health-benefits/" title="Health benefits of playing word games">Brain Health Benefits</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="page-sidebar">
+
+    <div class="card tools-widget">
+      <div class="tools-widget-title">Word Tools</div>
+      <div class="tools-widget-links" id="sidebarToolLinks"></div>
+    </div>
+
+  </aside>
+
+</div><!-- /page-wrap -->
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="/" title="WordFindLab home">WordFindLab</a>
+      <a href="/about/" title="About WordFindLab">About</a>
+      <a href="/contact/" title="Contact WordFindLab">Contact</a>
+      <a href="/disclaimer/" title="Disclaimer">Disclaimer</a>
+      <a href="/scrabble-word-finder/" title="Scrabble word finder">Scrabble Finder</a>
+      <a href="/wordle-solver/" title="Wordle solver">Wordle Solver</a>
+      <a href="/anagram-solver/" title="Anagram solver">Anagram Solver</a>
+      <a href="/words-with-friends-cheat/" title="Words With Friends cheat">Words With Friends</a>
+      <a href="/jumble-solver/" title="Jumble solver">Jumble Solver</a>
+      <a href="/blog/" title="Word game blog">Blog</a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2026 WordFindLab &nbsp;&middot;&nbsp;
+      <a href="/privacy-policy/" style="color:#8891a8" title="Privacy Policy">Privacy Policy</a> &nbsp;&middot;&nbsp;
+      <a href="/terms/" style="color:#8891a8" title="Terms of Service">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== SCRIPTS (loaded at bottom for performance) ===== -->
+<script src="/assets/wordfindlab.js?v=20260521"></script>
+<script src="/assets/js/dictionary.js?v=20260514"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T55GC2PM');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKVHJW1RE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2BKVHJW1RE');
+</script>
+
+<script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTpmNTM4OGI3Ny04N2JmLTQxNzYtOGJkNS1kNGNmMmNmNDM2MzY=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+
+<script async src="https://pagead2.googletagmanager.com/pagead/js/adsbygoogle.js?client=ca-pub-7302891841207454" crossorigin="anonymous"></script>
+
+<script>
+/* ---- Sidebar tool links ---- */
+(function buildSidebarLinks() {
+  const wrap = document.getElementById("sidebarToolLinks");
+  if (!wrap) return;
+  const currentPath = location.pathname.replace(/\/index\.html$/, "/");
+  SIDEBAR_TOOLS.forEach(t => {
+    const a = document.createElement("a");
+    a.href = t.href;
+    if (t.href === currentPath || (t.href === "/" && (currentPath === "/" || currentPath === ""))) {
+      a.className = "active";
+    }
+    a.innerHTML = `<span class="ico">${t.badge || t.icon || ""}</span>${t.label}`;
+    wrap.appendChild(a);
+  });
+})();
+
+/* ---- Demo chips ? fill input and search ---- */
+document.getElementById("demoBox").addEventListener("click", e => {
+  const chip = e.target.closest(".demo-chip");
+  if (!chip) return;
+  const val = chip.dataset.fill || chip.textContent;
+  document.getElementById("letters").value = val.replace(/[^A-Za-z?]/g, "");
+  document.getElementById("demoBox").style.display = "none";
+  search();
+});
+
+/* ---- Hide demo box on any input ---- */
+document.getElementById("letters").addEventListener("input", () => {
+  const box = document.getElementById("demoBox");
+  if (box) box.style.display = "none";
+});
+
+/* ---- Search ---- */
+async function search() {
+  // If dictionary isn't ready yet, load it now and wait
+  if (!CURRENT_DICT) {
+    setStatus('<span class="loader"></span> Loading dictionary...');
+    const ok = await loadDictionary("all");
+    if (!ok) {
+      setStatus("Dictionary failed to load. Please check your connection and refresh.", "warn");
+      return;
+    }
+  }
+
+  const rawInput = document.getElementById("letters").value.toUpperCase().replace(/[^A-Z?*]/g, "");
+  if (rawInput.length < 2) {
+    setStatus("Enter at least 2 letters to search.", "warn");
+    document.getElementById("resultsCard").hidden = true;
+    return;
+  }
+
+  const exactLen = parseInt(document.getElementById("length").value, 10);
+  const t0 = performance.now();
+
+  const result = runSearch(rawInput, {
+    minLen:     isFinite(exactLen) ? exactLen : 2,
+    maxLen:     isFinite(exactLen) ? exactLen : rawInput.length,
+    startsWith: document.getElementById("starts").value,
+    endsWith:   document.getElementById("ends").value,
+    contains:   document.getElementById("contains").value,
+  });
+
+  if (result.error === "too_many_wildcards") {
+    setStatus("Too many wildcards - use 3 or fewer ? symbols.", "warn");
+    return;
+  }
+
+  const ms = (performance.now() - t0).toFixed(0);
+  const card = document.getElementById("resultsCard");
+  card.hidden = false;
+
+  const meaningfulOnly = document.getElementById("meaningful-toggle")?.checked;
+  const words = await WordFindLabDictionary.filterMeaningfulWords(result.words, meaningfulOnly);
+  document.getElementById("resultsMeta").textContent =
+    words.length.toLocaleString() + " words found - " + ms + " ms";
+
+  renderWordGroups("results", words, scrabbleScore);
+  setStatus("");
+}
+
+document.getElementById("go").addEventListener("click", search);
+document.getElementById("clear").addEventListener("click", () => {
+  ["letters","starts","ends","contains","length"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = "";
+  });
+  document.getElementById("resultsCard").hidden = true;
+  const box = document.getElementById("demoBox");
+  if (box) box.style.display = "";
+  setStatus("");
+  document.getElementById("letters").focus();
+});
+document.getElementById("letters").addEventListener("keydown", e => {
+  if (e.key === "Enter") search();
+});
+document.getElementById("dict").addEventListener("change", () => {
+  CURRENT_DICT = null;
+});
+
+const initialLetters = new URLSearchParams(location.search).get("letters")
+  || new URLSearchParams(location.search).get("q")
+  || new URLSearchParams(location.search).get("search_term_string")
+  || "";
+if (initialLetters) {
+  const lettersInput = document.getElementById("letters");
+  if (lettersInput && !lettersInput.value) {
+    lettersInput.value = initialLetters.toUpperCase().replace(/[^A-Za-z?*]/g, "");
+    const box = document.getElementById("demoBox");
+    if (box) box.style.display = "none";
+    setTimeout(() => { search(); }, 0);
+  }
+}
+
+// Kick off dictionary load in background (non-blocking)
+loadDictionary("all");
+WordFindLabDictionary.preloadMeaningfulWords();
+</script>
+<script src="/assets/adsterra.js?v=20260522"></script>
+<script src="/assets/sitewide-ads.js?v=20260522"></script>
+</body>
+</html>

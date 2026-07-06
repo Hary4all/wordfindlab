@@ -1,0 +1,278 @@
+/* ============================================================
+   WordFindLab — Visual Enhancement CSS
+   Load AFTER style.css for additional polish and animations
+   ============================================================ */
+
+/* ===== Smooth scroll behavior ===== */
+html { scroll-behavior: smooth; }
+
+/* ===== Entrance animations ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.3); }
+  50% { box-shadow: 0 0 0 12px rgba(37, 99, 235, 0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Apply entrance animations to key sections */
+.hero-copy,
+.hero-search-card,
+.game-hub-header,
+.feature-hub-title,
+.trust-header,
+.seo-section > h2,
+.seo-section > div,
+.homepage-wotd,
+.homepage-popular-tools,
+.family-section__title,
+.family-card,
+.trust-card,
+.related-tools {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.hero-copy { animation-delay: 0.1s; }
+.hero-search-card { animation-delay: 0.2s; }
+.hero-feature:nth-child(1) { animation-delay: 0.25s; }
+.hero-feature:nth-child(2) { animation-delay: 0.3s; }
+.hero-feature:nth-child(3) { animation-delay: 0.35s; }
+.hero-feature:nth-child(4) { animation-delay: 0.4s; }
+.game-hub-header { animation-delay: 0.1s; }
+.game-cta-card:nth-child(1) { animation-delay: 0.15s; }
+.game-cta-card:nth-child(2) { animation-delay: 0.25s; }
+.game-cta-card:nth-child(3) { animation-delay: 0.35s; }
+.game-cta-card:nth-child(4) { animation-delay: 0.45s; }
+.homepage-wotd { animation-delay: 0.1s; }
+.homepage-popular-tools { animation-delay: 0.2s; }
+.feature-hub-title { animation-delay: 0.1s; }
+.feature-card { animation-delay: 0.15s; }
+.family-section__title { animation-delay: 0.1s; }
+.family-card:nth-child(1) { animation-delay: 0.1s; }
+.family-card:nth-child(2) { animation-delay: 0.15s; }
+.family-card:nth-child(3) { animation-delay: 0.2s; }
+.family-card:nth-child(4) { animation-delay: 0.25s; }
+.family-card:nth-child(5) { animation-delay: 0.3s; }
+.family-card:nth-child(6) { animation-delay: 0.35s; }
+.trust-header { animation-delay: 0.1s; }
+.trust-card:nth-child(1) { animation-delay: 0.15s; }
+.trust-card:nth-child(2) { animation-delay: 0.25s; }
+.trust-card:nth-child(3) { animation-delay: 0.35s; }
+.trust-card:nth-child(4) { animation-delay: 0.45s; }
+.seo-section > h2:nth-of-type(1) { animation-delay: 0.1s; }
+.seo-section > div:nth-of-type(1) { animation-delay: 0.15s; }
+.seo-section > h2:nth-of-type(2) { animation-delay: 0.2s; }
+.seo-section > div:nth-of-type(2) { animation-delay: 0.25s; }
+.seo-section > h2:nth-of-type(3) { animation-delay: 0.3s; }
+.seo-section > div:nth-of-type(3) { animation-delay: 0.35s; }
+.related-tools { animation-delay: 0.4s; }
+
+/* ===== Hero search bar focus effect ===== */
+.input-letters:focus {
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15), 0 1px 3px rgba(15, 23, 42, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+
+/* ===== CTA button pulse on hover ===== */
+.btn-cta:hover {
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+/* ===== Hero tiles floating animation ===== */
+.hero-tile--w { animation: float 3s ease-in-out infinite; }
+.hero-tile--k { animation: float 3.5s ease-in-out infinite 0.5s; }
+.hero-tile--q { animation: float 4s ease-in-out infinite 1s; }
+.hero-tile--z { animation: float 3.2s ease-in-out infinite 0.3s; }
+
+/* ===== Mini chips floating ===== */
+.hero-mini-chip--quiz { animation: float 4s ease-in-out infinite 0.2s; }
+.hero-mini-chip--jazz { animation: float 3.5s ease-in-out infinite 0.7s; }
+.hero-mini-chip--train { animation: float 4.2s ease-in-out infinite 1.1s; }
+.hero-mini-chip--rating { animation: float 3.8s ease-in-out infinite 0.4s; }
+.hero-mini-chip--stair { animation: float 4.5s ease-in-out infinite 0.9s; }
+
+/* ===== Hero orbs more visible ===== */
+.hero-orb {
+  opacity: 0.6;
+  filter: blur(40px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.hero-orb:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+
+/* ===== Card hover lift ===== */
+.card,
+.feature-card,
+.game-cta-card,
+.family-card,
+.trust-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card:hover,
+.feature-card:hover,
+.game-cta-card:hover,
+.family-card:hover,
+.trust-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.1);
+}
+
+/* ===== Link hover underline animation ===== */
+.hero-quick-link,
+.related-link,
+.wotd-featured-links a,
+.wotd-featured-list a {
+  position: relative;
+}
+.hero-quick-link::after,
+.related-link::after,
+.wotd-featured-links a::after,
+.wotd-featured-list a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+.hero-quick-link:hover::after,
+.related-link:hover::after,
+.wotd-featured-links a:hover::after,
+.wotd-featured-list a::after {
+  width: 100%;
+}
+
+/* ===== Demo chips shimmer ===== */
+.demo-chip {
+  background: linear-gradient(90deg, var(--bg) 25%, #f1f5f9 50%, var(--bg) 75%);
+  background-size: 200% 100%;
+  transition: all 0.2s ease;
+}
+.demo-chip:hover {
+  background-position: -200% 0;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ===== Announcement bar smoother animation ===== */
+.mini-announce-track {
+  animation: scroll 30s linear infinite;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ===== Trust badge hover ===== */
+.trust-badge {
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+.trust-badge:hover {
+  transform: translateY(-1px);
+  color: var(--accent);
+}
+
+/* ===== Results loading shimmer ===== */
+.loader {
+  background: linear-gradient(90deg, var(--bg) 25%, #e2e8f0 50%, var(--bg) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s ease-in-out infinite;
+}
+
+/* ===== Scroll-triggered reveal (if IntersectionObserver is available) ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Better mobile hero spacing ===== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(36px, 8vw, 56px);
+  }
+  .hero-subcopy {
+    font-size: 16px;
+  }
+  .hero-feature h3 {
+    font-size: 15px;
+  }
+  .hero-feature p {
+    font-size: 13px;
+  }
+}
+
+/* ===== Reduced motion preference ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* ===== Print styles ===== */
+@media print {
+  .mini-announce-bar,
+  .hero-visual,
+  .hero-playbook,
+  .hero-sidecard,
+  .hero-trending-card,
+  .hero-trust-row,
+  .hero-stat-badge,
+  .hero-lens,
+  .hero-orb,
+  .hero-mini-elements,
+  .hero-tile,
+  .definition-panel,
+  .game-cta-hub,
+  .family-section,
+  .trust-section,
+  .tools-widget,
+  .footer-links,
+  .footer-copy a,
+  .btn-cta,
+  .btn.ghost,
+  .advanced,
+  .demo-box,
+  .hero-enter-hint,
+  .hero-quick-links,
+  .trust-badges {
+    display: none !important;
+  }
+  .hero-search-card {
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+  .page-wrap { display: block; }
+  .page-sidebar { display: none; }
+  .card { border: 1px solid #ccc; }
+}
